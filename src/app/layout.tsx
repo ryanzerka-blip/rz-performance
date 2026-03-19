@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "Ryan Zerka",
     "RZ Performance",
   ],
+  verification: {
+    google: "RkzVHQdLEni5Ubz4uo1tN3y10y7FiKO48IiN7cmWRbs",
+  },
   openGraph: {
     title: "Ryan Zerka | ISSA Certified Personal Trainer",
     description:
