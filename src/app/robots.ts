@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://rz-performance-five.vercel.app/sitemap.xml",
+    sitemap: "https://zerkperformance.com/sitemap.xml",
   };
 }
