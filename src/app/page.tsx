@@ -138,24 +138,24 @@ function About() {
             Mobility Is Strength. Strength Is Mobility.
           </h2>
           <p className="text-zinc-400 leading-relaxed mb-4">
-            Ryan is an ISSA-certified personal trainer with a strong passion for functional
-            fitness. His training philosophy integrates strength training, conditioning,
+            I&apos;m an ISSA-certified personal trainer with a strong passion for functional
+            fitness. My training philosophy integrates strength training, conditioning,
             plyometrics, and high-intensity work, all grounded in the belief that mobility is
-            strength&mdash;and strength is mobility. His goal is to help clients feel strong,
+            strength&mdash;and strength is mobility. My goal is to help clients feel strong,
             capable, and efficient in any physical endeavor they pursue.
           </p>
           <p className="text-zinc-400 leading-relaxed mb-4">
-            Ryan has participated in a variety of challenging fitness events, including HYROX,
+            I&apos;ve participated in a variety of challenging fitness events, including HYROX,
             Spartan Races, and multiple trail races. The most demanding feat to date was a half
             marathon up Killington Mountain, which took over seven hours and included obstacles
-            along the way. These experiences have deepened his understanding of the physical
+            along the way. These experiences have deepened my understanding of the physical
             demands of performance, as well as the importance of recovery through proper
             nutrition and restorative movement.
           </p>
           <p className="text-zinc-400 leading-relaxed mb-8">
-            Currently pursuing his CSCS (Certified Strength and Conditioning Specialist)
-            certification upon graduating college, Ryan is committed to deepening his expertise
-            in performance training. To him, training athletic is training for life. The ability
+            I&apos;m currently pursuing my CSCS (Certified Strength and Conditioning Specialist)
+            certification upon graduating college, and I&apos;m committed to deepening my expertise
+            in performance training. To me, training athletic is training for life. The ability
             to jump, sprint, lift, and move with confidence isn&apos;t just for
             competitors&mdash;it&apos;s essential for everyone, especially as we age. Building
             and maintaining these capabilities is what keeps us independent, resilient, and
