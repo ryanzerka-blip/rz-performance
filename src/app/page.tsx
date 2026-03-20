@@ -81,15 +81,14 @@ function Hero() {
         <p className="text-red-500 font-semibold tracking-[0.25em] uppercase text-xs md:text-sm mb-6">
           Certified Personal Trainer
         </p>
-        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-4">
-          Transform Your Body.
+        <h1 className="text-5xl md:text-7xl leading-tight tracking-tight mb-4" style={{ fontFamily: 'var(--font-teko)' }}>
+          Push Your Limits.
         </h1>
-        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-8">
-          <span className="text-red-500">Elevate Your Life.</span>
+        <h1 className="text-5xl md:text-7xl leading-tight tracking-tight mb-8" style={{ fontFamily: 'var(--font-teko)' }}>
+          <span className="text-red-500">Own Your Strength.</span>
         </h1>
         <p className="text-zinc-400 text-lg md:text-xl max-w-xl mx-auto mb-10">
-          Science-backed training programs designed to build strength, burn fat, and create
-          habits that last a lifetime.
+          Athletic-based training that builds strength, endurance, and resilience you can carry for life.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -393,7 +392,7 @@ function Races() {
 
               <div
                 className={`grid gap-4 pt-4 border-t border-zinc-700/50 ${
-                  race.stats.length > 3 ? "grid-cols-4" : "grid-cols-3"
+                  race.stats.length > 3 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"
                 }`}
               >
                 {race.stats.map((s) => (
@@ -505,7 +504,7 @@ function Testimonials() {
     {
       quote:
         "The personalized approach made all the difference. My program actually fits my schedule and I've never felt stronger.",
-      name: "James T.",
+      name: "Sophia J.",
       detail: "Gained 12 lbs of muscle",
     },
     {
