@@ -475,6 +475,7 @@ function Gallery() {
               className="w-full h-full object-cover"
               controls
               playsInline
+              preload="metadata"
               poster="/images/spartan-fire.jpg"
             >
               <source src="/images/training-video.mp4" type="video/mp4" />
@@ -485,9 +486,9 @@ function Gallery() {
               className="w-full h-full object-cover"
               controls
               playsInline
-            >
-              <source src="/images/training-video-2.mp4" type="video/mp4" />
-            </video>
+              preload="metadata"
+              src="/images/training-video-2.mp4#t=0.5"
+            />
           </div>
         </div>
 
