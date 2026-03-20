@@ -562,7 +562,7 @@ function Contact() {
           {/* FormSubmit config */}
           <input type="hidden" name="_subject" value="New inquiry from RZ Performance website" />
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="" />
+          <input type="hidden" name="_next" value="https://zerkperformance.com" />
           <input type="text" name="_honey" className="hidden" />
 
           <div className="grid sm:grid-cols-2 gap-5">
