@@ -373,7 +373,7 @@ function Races() {
                 <div>
                   <h3 className="text-xl font-bold">{race.name}</h3>
                   <p className="text-zinc-500 text-sm">
-                    {race.location} &middot; {race.date}
+                    {race.location}
                   </p>
                 </div>
                 <span className="bg-red-500/15 text-red-500 text-xs font-bold tracking-wider px-3 py-1 rounded-full">
