@@ -18,7 +18,7 @@ function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
+        <div className="hidden md:flex gap-8 text-sm font-semibold tracking-wider uppercase text-zinc-400" style={{ fontFamily: 'var(--font-oswald)' }}>
           {links.map((l) => (
             <a
               key={l}
@@ -48,7 +48,7 @@ function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-zinc-400">
+        <div className="md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 flex flex-col gap-4 text-sm font-semibold tracking-wider uppercase text-zinc-400" style={{ fontFamily: 'var(--font-oswald)' }}>
           {links.map((l) => (
             <a
               key={l}
