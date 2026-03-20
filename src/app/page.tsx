@@ -68,20 +68,26 @@ function Navbar() {
 /* ─── HERO ─── */
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-20">
+    <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-20 overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-red-500/10 via-zinc-950 to-zinc-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-950 to-zinc-950" />
+
+      {/* Large faded logo watermark behind content */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.07] pointer-events-none">
+        <img src="/images/rz-logo.png" alt="" className="w-[500px] md:w-[700px]" />
+      </div>
 
       <div className="relative z-10 max-w-3xl">
-        <img src="/images/rz-logo.png" alt="RZ Performance" className="h-24 md:h-32 w-auto mx-auto mb-6" />
-        <p className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4">
+        <p className="text-red-500 font-semibold tracking-[0.25em] uppercase text-xs md:text-sm mb-6">
           Certified Personal Trainer
         </p>
-        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6">
-          Transform Your Body.{" "}
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-4">
+          Transform Your Body.
+        </h1>
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-8">
           <span className="text-red-500">Elevate Your Life.</span>
         </h1>
-        <p className="text-zinc-400 text-lg md:text-xl max-w-xl mx-auto mb-8">
+        <p className="text-zinc-400 text-lg md:text-xl max-w-xl mx-auto mb-10">
           Science-backed training programs designed to build strength, burn fat, and create
           habits that last a lifetime.
         </p>
