@@ -441,16 +441,27 @@ function Gallery() {
           the training I bring to my clients.
         </p>
 
-        {/* Video */}
-        <div className="mb-8 rounded-2xl overflow-hidden max-w-3xl mx-auto">
-          <video
-            className="w-full"
-            controls
-            playsInline
-            poster="/images/spartan-fire.jpg"
-          >
-            <source src="/images/training-video.mp4" type="video/mp4" />
-          </video>
+        {/* Videos */}
+        <div className="grid md:grid-cols-2 gap-4 mb-8 max-w-5xl mx-auto">
+          <div className="rounded-2xl overflow-hidden">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+              poster="/images/spartan-fire.jpg"
+            >
+              <source src="/images/training-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="rounded-2xl overflow-hidden">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+            >
+              <source src="/images/training-video-2.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
 
         {/* Photo grid */}
