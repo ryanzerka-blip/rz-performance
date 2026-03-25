@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /* ─── NAV ─── */
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const links = ["About", "Races", "Gallery", "Services", "Testimonials", "Contact"];
+  const links = ["About", "Races", "Gallery", "Services", "Testimonials", "Contact", "Book"];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
@@ -675,6 +675,41 @@ function Contact() {
   );
 }
 
+/* ─── CALENDLY ─── */
+function CalendlySection() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <section id="book" className="py-24 px-6 bg-zinc-900/50">
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-3">
+          Book a Call
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Ready to <span className="text-red-500">Transform?</span>
+        </h2>
+        <p className="text-zinc-400 mb-12">
+          Schedule a free consultation to discuss your goals and see if the program is right for you.
+        </p>
+
+        <div
+          className="calendly-inline-widget rounded-2xl overflow-hidden"
+          data-url="https://calendly.com/ryanzerka/30min?hide_gdpr_banner=1&background_color=18181b&text_color=e4e4e7&primary_color=ef4444"
+          style={{ minWidth: "320px", height: "700px" }}
+        />
+      </div>
+    </section>
+  );
+}
+
 /* ─── FOOTER ─── */
 function Footer() {
   return (
@@ -716,6 +751,7 @@ export default function Home() {
         <Services />
         <Testimonials />
         <Contact />
+        <CalendlySection />
       </main>
       <Footer />
     </>
