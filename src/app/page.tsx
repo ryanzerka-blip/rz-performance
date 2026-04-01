@@ -199,6 +199,50 @@ function About() {
   );
 }
 
+/* ─── TRANSFORMATION ─── */
+function Transformation() {
+  return (
+    <section id="transformation" className="py-24 px-6 bg-zinc-900/50">
+      <div className="max-w-5xl mx-auto text-center">
+        <p className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-3">
+          The Journey
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          The <span className="text-red-500">Transformation</span>
+        </h2>
+        <p className="text-zinc-400 max-w-xl mx-auto mb-16">
+          This is what disciplined training, proper nutrition, and the right mindset can achieve.
+        </p>
+
+        <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          {/* Before */}
+          <div className="relative rounded-2xl overflow-hidden">
+            <img
+              src="/images/before.jpg"
+              alt="Before transformation"
+              className="w-full h-[400px] md:h-[600px] object-cover"
+            />
+            <span className="absolute bottom-4 left-4 bg-zinc-900/80 backdrop-blur-sm text-white text-sm font-semibold px-4 py-2 rounded-lg">
+              Before
+            </span>
+          </div>
+          {/* After */}
+          <div className="relative rounded-2xl overflow-hidden">
+            <img
+              src="/images/spartan-fire.jpg"
+              alt="After transformation"
+              className="w-full h-[400px] md:h-[600px] object-cover"
+            />
+            <span className="absolute bottom-4 left-4 bg-red-500/90 backdrop-blur-sm text-white text-sm font-semibold px-4 py-2 rounded-lg">
+              After
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── SERVICES ─── */
 function Services() {
   const plans = [
@@ -746,6 +790,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Transformation />
         <Races />
         <Gallery />
         <Services />
