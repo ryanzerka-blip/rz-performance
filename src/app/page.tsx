@@ -527,10 +527,8 @@ function Gallery() {
               controls
               playsInline
               preload="metadata"
-              poster="/images/spartan-fire.jpg"
-            >
-              <source src="/images/training-video.mp4" type="video/mp4" />
-            </video>
+              src="/images/training-video.mp4#t=0.5"
+            />
           </div>
           <div className="rounded-2xl overflow-hidden">
             <video
