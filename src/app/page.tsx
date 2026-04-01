@@ -238,6 +238,13 @@ function Transformation() {
             </span>
           </div>
         </div>
+
+        <a
+          href="#book"
+          className="inline-block mt-12 bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
+        >
+          Apply to Work With Me
+        </a>
       </div>
     </section>
   );
